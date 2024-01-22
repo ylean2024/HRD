@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "861280605753",
+    "project_id": "humanresourcesdepartment-2446c",
+    "storage_bucket": "humanresourcesdepartment-2446c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861280605753:android:b4f491e60a27559861dfe8",
+        "android_client_info": {
+          "package_name": "com.example.humanresourcesdepartment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuBoiEDBB38Wqc5yoKZrpN0ypG6RqxNB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

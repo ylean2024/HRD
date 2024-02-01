@@ -59,19 +59,9 @@ public class RegFragment extends Fragment {
         EditText password = view.findViewById(R.id.password_reg);
         EditText passwordConfirmed = view.findViewById(R.id.password_confirmed_reg);
 
-        enter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_regFragment_to_authFragment);
-            }
-        });
+        enter.setOnClickListener(v -> navController.navigate(R.id.action_regFragment_to_authFragment));
 
-        registration.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                handleRegistrationButtonClick(navController, login, password, passwordConfirmed);
-            }
-        });
+        registration.setOnClickListener(v -> handleRegistrationButtonClick(navController, login, password, passwordConfirmed));
     }
 
     private void handleRegistrationButtonClick(NavController navController, EditText login, EditText password, EditText passwordConfirmed) {

@@ -22,6 +22,11 @@
             android:title="О программе" />
 
         <item
+            android:id="@+id/nav_instruction"
+            android:icon="@drawable/instruction_icon"
+            android:title="Инструкция" />
+
+        <item
             android:id="@+id/nav_git"
             android:icon="@drawable/git"
             android:title="GitHub" />

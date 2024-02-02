@@ -23,7 +23,6 @@ public class GitFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_git, container, false);
 
         return view;
@@ -32,8 +31,6 @@ public class GitFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        final NavController navController = Navigation.findNavController(view);
 
         WebView webView = view.findViewById(R.id.github);
 

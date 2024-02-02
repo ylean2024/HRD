@@ -7,35 +7,9 @@
     android:background="@color/blackForBackground"
     tools:context="com.example.humanresourcesdepart.SecondPages.PeoplesFragment">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/drawer_layout"
-        android:fitsSystemWindows="true"
-        tools:openDrawer="start"
-        app:layout_constraintBottom_toTopOf="@id/top_menu">
-
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/nav_view"
-            android:layout_gravity="start"
-            app:headerLayout="@layout/nav_header"
-            app:menu="@menu/nav_menu"
-            app:itemIconTint="@color/black"
-            app:itemTextColor="@color/Gray"/>
-
-    </androidx.drawerlayout.widget.DrawerLayout>
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/top_menu"
+        android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@color/blackForBackground"
@@ -57,15 +31,68 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filters_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/blackForBottom"
+        app:layout_constraintTop_toBottomOf="@id/top_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/memory"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:foregroundGravity="center"
+            app:cardBackgroundColor="@color/GrayForFilter"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Возраст"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/downForAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/arrow_down"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/upForAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/arrow_up"
+                android:visibility="gone" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top_menu">
+        app:layout_constraintTop_toBottomOf="@id/filters_main">
 
         <ListView
             android:id="@+id/peopleList"

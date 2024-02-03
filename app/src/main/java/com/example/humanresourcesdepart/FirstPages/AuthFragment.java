@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.humanresourcesdepartment.R;
+import com.example.humanresourcesdepart.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AuthFragment extends Fragment {

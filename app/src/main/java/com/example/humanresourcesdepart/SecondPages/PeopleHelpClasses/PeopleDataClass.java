@@ -3,18 +3,21 @@ package com.example.humanresourcesdepart.SecondPages.PeopleHelpClasses;
 public class PeopleDataClass {
     public String name;
     public String surname;
+
+    public String imagePath;
     public int age;
     public String position;
     public String email;
 
     public PeopleDataClass() {}
 
-    public PeopleDataClass(String name, String surname, int age, String position, String email) {
+    public PeopleDataClass(String name, String surname, int age, String position, String email, String imagePath) {
         this.name = name;
         this.surname = surname;
         this.age = age;
         this.position = position;
         this.email = email;
+        this.imagePath = imagePath;
     }
 
     public String getName() {
@@ -55,5 +58,13 @@ public class PeopleDataClass {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 }

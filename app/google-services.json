@@ -1,21 +1,22 @@
 {
   "project_info": {
-    "project_number": "861280605753",
-    "project_id": "humanresourcesdepartment-2446c",
-    "storage_bucket": "humanresourcesdepartment-2446c.appspot.com"
+    "project_number": "336558393600",
+    "firebase_url": "https://humanresourcesdepart-40127-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "humanresourcesdepart-40127",
+    "storage_bucket": "humanresourcesdepart-40127.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:861280605753:android:b4f491e60a27559861dfe8",
+        "mobilesdk_app_id": "1:336558393600:android:5843fa977370501bfbcbe5",
         "android_client_info": {
-          "package_name": "com.example.humanresourcesdepartment"
+          "package_name": "com.example.humanresourcesdepart"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAuBoiEDBB38Wqc5yoKZrpN0ypG6RqxNB0"
+          "current_key": "AIzaSyAOQRjAGKj2O1DMwMiQTZC6viDWESTwpns"
         }
       ],
       "services": {

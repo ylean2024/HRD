@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.HumanResourcesDepart" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/blackForBackground</item>
-        <item name="colorPrimaryVariant">@color/blackForBackground</item>
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryVariant">@color/background</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

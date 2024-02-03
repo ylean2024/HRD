@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.humanresourcesdepartment.R;
+import com.example.humanresourcesdepart.R;
 import com.example.humanresourcesdepart.SecondPages.MainSecondPage;
 
 public class MainFirstPage extends AppCompatActivity implements com.example.humanresourcesdepart.FirstPages.AuthFragment.OnAuthorizationSuccessListener {

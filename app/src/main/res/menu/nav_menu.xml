@@ -31,6 +31,12 @@
             android:icon="@drawable/git"
             android:title="GitHub" />
 
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/admin"
+            android:title="Админ-панель"
+            android:visible="false"/>
+
     </group>
 
     <item

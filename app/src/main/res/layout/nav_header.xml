@@ -9,12 +9,14 @@
     android:theme="@style/AppTheme.NoActionBar">
 
     <TextView
+        android:id="@+id/userNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Имя Фамилия пользователя"
         android:textStyle="bold"/>
 
     <TextView
+        android:id="@+id/userEmailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="a@mail.ru"

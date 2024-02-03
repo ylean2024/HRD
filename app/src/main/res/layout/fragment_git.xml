@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blackForBackground"
+    android:background="@color/background"
     tools:context="com.example.humanresourcesdepart.SecondPages.GitFragment">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/github"
-        android:textColor="@color/goodWhite"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:layout_marginTop="65dp"
         app:layout_constraintEnd_toEndOf="parent"

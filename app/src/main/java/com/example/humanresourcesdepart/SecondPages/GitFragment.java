@@ -16,7 +16,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
-import com.example.humanresourcesdepartment.R;
+import com.example.humanresourcesdepart.R;
 
 public class GitFragment extends Fragment {
 

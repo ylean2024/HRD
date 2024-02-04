@@ -39,11 +39,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/first_question"
+                android:id="@+id/first"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
                 android:gravity="left"
-                android:text="1."
+                android:text="1. На главной странице изображен список текущих сотрудников компании, который
+можно фильтровать по возрасту или искать информацию при помощи поисковой строки"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,122 +53,32 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/first_answer"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="left"
-                android:text=""
-                android:textColor="@color/Gray"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/first_question" />
-
-            <TextView
-                android:id="@+id/second_question"
+                android:id="@+id/second"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:gravity="left"
-                android:text="2. "
+                android:text="2. Чтобы перемещаться между функционалами, необходимо вызвать контекстное меню,
+проведя пальцем от левой части экрана к правой"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/first_answer" />
+                app:layout_constraintTop_toBottomOf="@id/first" />
 
             <TextView
-                android:id="@+id/second_answer"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="left"
-                android:text=""
-                android:textColor="@color/Gray"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/second_question" />
-
-            <TextView
-                android:id="@+id/third_question"
+                android:id="@+id/third"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:gravity="left"
-                android:text="3."
+                android:text="3.Чтобы добавить нового пользователя у вас должен быть доступ админа, в контекстном
+меню откроется новая вкладка - 'админ-панель'"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/second_answer" />
-
-            <TextView
-                android:id="@+id/third_answer"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="left"
-                android:text=""
-                android:textColor="@color/Gray"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/third_question" />
-
-            <TextView
-                android:id="@+id/fourth_question"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:gravity="left"
-                android:text="4."
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/third_answer" />
-
-            <TextView
-                android:id="@+id/fourth_answer"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="left"
-                android:text=""
-                android:textColor="@color/Gray"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/fourth_question" />
-
-            <TextView
-                android:id="@+id/fifth_question"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:gravity="left"
-                android:text="5."
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/fourth_answer" />
-
-            <TextView
-                android:id="@+id/fifth_answer"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="100dp"
-                android:gravity="left"
-                android:text=""
-                android:textColor="@color/Gray"
-                android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/fifth_question" />
+                app:layout_constraintTop_toBottomOf="@id/second" />
 
         </LinearLayout>
 

@@ -49,9 +49,9 @@ public class PeopleDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void deletePeopleWithEmailNull() {
+    public void deletePeopleWithSurnameNull() {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete("people", "email IS NULL", null);
+        db.delete("people", "surname IS NULL", null);
         db.close();
     }
     public long addPerson(PeopleDataClass person) {

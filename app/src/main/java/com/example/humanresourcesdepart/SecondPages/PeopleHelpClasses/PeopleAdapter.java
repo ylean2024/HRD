@@ -41,7 +41,7 @@ public class PeopleAdapter extends ArrayAdapter<PeopleDataClass> {
         TextView emailTextView = view.findViewById(R.id.Email);
         ImageView profileImageView = view.findViewById(R.id.imageViewPeople);
 
-        if (person != null) {
+        if (person != null && person.surname != null) {
             nameTextView.setText(person.name + " " + person.surname);
             ageTextView.setText("Возраст - " + person.age + " лет\nДолжность - " + person.position);
             emailTextView.setText(person.email);

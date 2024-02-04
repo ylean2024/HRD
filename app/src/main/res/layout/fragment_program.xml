@@ -48,7 +48,8 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:text=""
+        android:text="Данная программу реализует логику отдела кадров. Есть возможность просматривать информацию о
+сотрудниках, который на данный момент работают в компании, также есть возможность добавлять новых."
         android:textColor="@color/black"
         android:textSize="16sp"
         android:layout_marginTop="20dp"

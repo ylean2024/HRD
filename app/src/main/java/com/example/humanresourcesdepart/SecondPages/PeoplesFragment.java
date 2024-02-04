@@ -61,14 +61,12 @@ public class PeoplesFragment extends Fragment {
 
         dbHelper = new PeopleDatabaseHelper(requireContext());
 
-        peopleList = dbHelper.getAllPeople();
-        originalPeopleList = new ArrayList<>(peopleList);
-
         try {
             db = dbHelper.getWritableDatabase();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         peopleList = dbHelper.getAllPeople();
         originalPeopleList = new ArrayList<>(peopleList); // Копирование оригинального списка
         getPeople();
@@ -130,6 +128,9 @@ public class PeoplesFragment extends Fragment {
     }
 
     public void addPeople() {
+        if (getContext() == null) {
+            return;
+        }
         PeopleDataClass person1 = new PeopleDataClass("Михаил", "Иванов", 30, "Разработчик", "misha@mail.ru", "https://firebasestorage.googleapis.com/v0/b/humanresourcesdepart-40127.appspot.com/o/1614344197_75-p-chelovek-na-svetlom-fone-83.jpg?alt=media&token=b07d12aa-d259-4cb3-bdf4-0e78c7c6679b");
         PeopleDataClass person2 = new PeopleDataClass("Сергей", "Михайлов", 25, "Дизайнер", "sergey@mail.ru", "https://firebasestorage.googleapis.com/v0/b/humanresourcesdepart-40127.appspot.com/o/secondPeople.jpg?alt=media&token=cb0496ca-2718-488e-9806-8d9bd2040285");
 
@@ -141,12 +142,11 @@ public class PeoplesFragment extends Fragment {
             peopleRef.child(person2.email.replace(".", "_")).setValue(person2);
         }
 
+        dbHelper.deletePeopleWithSurnameNull();
         peopleList.clear();
         peopleList.addAll(dbHelper.getAllPeople());
-        dbHelper.deletePeopleWithEmailNull();
         adapter = new PeopleAdapter(requireContext(), R.layout.list_item_people, peopleList);
         peopleListView.setAdapter(adapter);
-
         if (adapter != null) {
             adapter.notifyDataSetChanged();
         }
@@ -186,13 +186,13 @@ public class PeoplesFragment extends Fragment {
         List<PeopleDataClass> filteredList = new ArrayList<>();
 
         for (PeopleDataClass people : originalPeopleList) {
-            // Приведение имени диска и введенного запрос к нижнему регистру и проверка, содержится ли запрос в имени диска
+            // Приведение имени человека и введенного запрос к нижнему регистру и проверка, содержится ли запрос в имени диска
             if (people.getName().toLowerCase().contains(query.toLowerCase())) {
                 filteredList.add(people);
             }
         }
 
-        // Обновление списка дисков с отфильтрованным списком
+        // Обновление списка людей с отфильтрованным списком
         peopleList.clear();
         peopleList.addAll(filteredList);
 

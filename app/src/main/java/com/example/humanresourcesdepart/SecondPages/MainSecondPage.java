@@ -3,6 +3,7 @@ package com.example.humanresourcesdepart.SecondPages;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,7 +34,7 @@ public class MainSecondPage extends AppCompatActivity {
     private TextView userEmailTextView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        getSupportActionBar().hide();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_second_page_activity);
 

@@ -5,8 +5,7 @@
     android:layout_height="176dp"
     android:gravity="bottom"
     android:padding="16dp"
-    android:background="@color/SkyBlue"
-    android:theme="@style/AppTheme.NoActionBar">
+    android:background="@color/SkyBlue">
 
     <TextView
         android:id="@+id/userNameTextView"
